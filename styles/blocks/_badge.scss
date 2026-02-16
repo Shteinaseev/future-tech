@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+.badge {
+    --angle: 45deg;
+    display: inline-flex;
+    padding: fluid(4, 2) fluid(14, 10);
+    border-radius: rem(6);
+
+    background: var(--gradient);
+    border: rem(1) solid transparent;
+
+    @include laptop {
+        font-size: rem(14);
+        border-radius: rem(4);
+    }
+    
+}
